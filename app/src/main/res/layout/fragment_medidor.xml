@@ -1,0 +1,417 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:weightSum="1"
+    tools:context="com.example.jcruz.lectura11.MedidorActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:id="@+id/opcionesBotonesw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0a06b306"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:id="@+id/opcionesBotones1w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_ruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Ruta: 6521326-545"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones2w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                     android:text="uno"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/textView2Secuencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- -->
+        <LinearLayout
+
+            android:id="@+id/opcionesBotonesr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_medidor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Medidor:"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_labelr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bs5415-545"
+                    android:textSize="25sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- -->
+
+        <LinearLayout
+
+            android:id="@+id/linearLectura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <EditText
+                    android:id="@+id/Lectura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/title_lectura"
+                    android:inputType="number"
+                    android:maxLines="10"
+                    android:textSize="30sp">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- -->
+        <LinearLayout
+
+            android:id="@+id/opcionesBotonese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_domicilio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- -->
+        <!-- -->
+        <LinearLayout
+            android:id="@+id/opcionesBotonesh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0a06b306"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_labelgiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- -->
+        <!-- -->
+        <LinearLayout
+            android:id="@+id/opcionesBotonesh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0a06b306"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="cliente: 000"
+                    android:textSize="15sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- -->
+        <!-- -->
+        <LinearLayout
+            android:id="@+id/opcionesBotonesh3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0a06b306"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_contrato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="contrato: 000"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <!-- -->
+
+        <!-- -->
+        <LinearLayout
+            android:id="@+id/opcionesBotonesh4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0a06b306"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/opcionesBotones1h4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+                <!--   <Button
+                       android:text="uno"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />-->
+                <TextView
+                    android:id="@+id/section_edo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="Edo:"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <!-- -->
+
+
+        <!-- -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/botonmas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="10px"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_add_circle_white_24px" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="10px"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_save_white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

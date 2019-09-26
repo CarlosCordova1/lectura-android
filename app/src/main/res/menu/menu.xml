@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/fle_back"
+        android:icon="@drawable/ic_settings_white_18d"
+        android:title="Compose"
+        app:showAsAction="always"
+        app:titleTextColor="@android:color/white"
+       >
+        <menu  android:textColor="#ff0000" >
+         <!--   <item android:id="@+id/sub_configuracion"
+                android:icon="@drawable/ic_settings_white_18d"
+                android:title="@string/submenu_configuracion"></item>-->
+
+            <item android:id="@+id/sub_actualizar"
+                android:icon="@drawable/ic_autorenew_black_24dp_1x"
+                android:textColor="#ff0000"
+                android:title="@string/submenu_Actualizar"></item>
+
+
+            <item android:id="@+id/sub_salir"
+                android:icon="@drawable/ic_exit_to_app_black_24dp_1x"
+                android:title="@string/submenu_Salir"></item>
+        </menu>
+
+    </item>
+
+
+
+    <!--<item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always"></item>-->
+</menu>
